@@ -1,1 +1,46 @@
+public class CuentaBancaria{
+    private String titular;
+    private double saldo;
 
+    public CuentaBancaria(String titular, double saldo) {
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double monto){
+        if (monto > 0){
+            saldo = saldo + monto;
+            System.out.println("Se agrego a su cuenta: "+ monto);
+            System.out.println(titular +", su saldo actual es " + saldo);
+        }
+    }
+    public void retirar(double monto){
+        System.out.println("usted quiere retirar: "+ monto);
+        if (saldo >= monto){
+            saldo = saldo - monto;
+            System.out.println("extracion exitosa");
+        }else{
+            System.out.println("fondo insuficiente");
+        }
+    }
+
+
+    public static void main(String[] args){
+        CuentaBancaria cuenta1= new CuentaBancaria("Benjamin", 670);
+        cuenta1.depositar(30);
+        cuenta1.retirar(750);
+        System.out.println("Tu saldo es de " + cuenta1.getSaldo());
+    }
+}

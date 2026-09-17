@@ -16,4 +16,5 @@ Dentro del método `main`, desarrollé la siguiente lógica de prueba:
 4. Finalmente, utilicé el método `getSaldo()` para imprimir el saldo restante y confirmar que la extracción denegada no alteró mi dinero.
 
 Ejecución en consola
-<img width="1366" height="723" alt="imagen" src="https://github.com/user-attachments/assets/27137299-3976-4e33-8ce9-1c77f2299305" />
+<img width="1366" height="722" alt="imagen" src="https://github.com/user-attachments/assets/ec413df5-3827-4b6f-9557-715a64ff8432" />
+
